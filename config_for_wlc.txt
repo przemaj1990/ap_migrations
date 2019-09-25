@@ -1,0 +1,6 @@
+config ap primary-base EMEA-WLC DK-HHS-AP-045 10.1.1.1 
+ config ap primary-base EMEA-WLC DK-HOR-AP-009 10.1.1.1 
+ config ap primary-base EMEA-WLC DE-KRE-AP-085 10.1.1.1 
+ config ap primary-base EMEA-WLC SE-HEL-AP-01 10.1.1.1 
+ config ap primary-base EMEA-WLC DK-HOR-AP-142 10.1.1.1 
+ 

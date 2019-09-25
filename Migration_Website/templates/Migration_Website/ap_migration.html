@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h1>List of selected AP:</h1>
+{% for i in context %}
+    <li>{{i}}</li>
+{% endfor %}
+</head>
+<form action="" method="post">
+    <h2>New Controller Details:</h2>
+    <a>alert & explanation what will happen after submit</a>
+        {% csrf_token %}
+    <div class="form-group">
+        <label>Enter Controller Name:</label>
+     <input type="Name" class="form-control" name="wlc_name" aria-describedby="Controller Name" placeholder="Enter Controller Name">
+        <label>Enter New Controller IP Addess:</label>
+     <input type="Name" class="form-control" name="wlc_ip" aria-describedby="Controller Ip Address" placeholder="Enter New Controller IP Addess">
+<div class="form-group">
+<button class="btn" type="submit">Please generate config to migrate AP</button>
+</div>
+</div>
+</form>
+
+<body>
+
+</body>
+</html>
