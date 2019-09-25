@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.urls import path, re_path
-from Migration_Website.views import controller_choose, ap_list
+from Migration_Website.views import controller_choose, ap_list, ap_migration
 
 
 
@@ -26,4 +26,5 @@ urlpatterns = [
     path('ap_migrations/', controller_choose, name="controller_choose"),
     # path('ap_migrations/<int:a>.<int:b>.<int:c>.<int:d>', ap_list, name="ap_list"),
     path('ap_migrations/test', ap_list, name="ap_list"),
+    path('ap_migrations/migration', ap_migration, name="ap_migration"),
 ]

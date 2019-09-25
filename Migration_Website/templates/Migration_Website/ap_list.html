@@ -1,3 +1,8 @@
+
+<form action="" method="post">
+    {% csrf_token %}
+
+
     <section class="mr-4 ml-4">
     <table class="table">
             <thead>
@@ -17,7 +22,7 @@
     <th scope="row" class="col-1"></th>
     <td class="col-5">
 
-        <input type="checkbox" class="custom-control-input" value="{{i.ip}}">
+        <input type="checkbox" class="custom-control-input" value="{{i.ap_name}}" name="ip">
         <label class="custom-control-label">{{i.ap_name}}</label>
 
     </td>
@@ -31,5 +36,8 @@
         </table>
     </section>
 
-
+<div class="form-group">
+<button class="btn" type="submit">Please generate config to migrate AP</button>
+</div>
+</form>
 
